@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- 결재 growth-20261111-3 승인(11-16 16:48). 표시명 영문 = 운영실 확정 11-23 10:4x(실명 통일 승인값과 같음, backoffice 대조). 보일 메일 11-22(backoffice 업무용-메일 정본, 0등급). 남은 빈 자리: 사진(photo.jpg)·방문 카운터(GoatCounter, backoffice 가입 뒤) — 둘은 없어도 공개(결재 -3). -->
+  <title>Seyun Jeong — Solo developer, shipping end-to-end with AI agents</title>
+  <meta name="description" content="E-commerce automation, unattended content pipelines, and internal-tool PWAs. Built end-to-end by one developer with AI agents.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <nav class="lang"><a href="ko/" lang="ko" hreflang="ko">한국어</a></nav>
+
+  <!-- 1 머리 -->
+  <section class="hero">
+    <!-- 사진이 오면 아래 줄의 주석을 풀고 photo.jpg를 site/ 에 넣는다(외주 프로필과 같은 사진). 없으면 사진 없이 공개. -->
+    <!-- <img class="photo" src="photo.jpg" alt="" width="96" height="96"> -->
+    <h1>Seyun Jeong</h1>
+    <p class="lead">Solo developer who ships end-to-end with AI agents: e-commerce automation, unattended content pipelines, and internal-tool PWAs, designed, built and shipped end to end.</p>
+    <p class="buttons">
+      <a class="primary" href="mailto:seyunjeong2025@gmail.com">Email me</a>
+      <!-- 플랫폼 프로필(Upwork·Fiverr)이 생기면 버튼 1개 추가: <a href="PROFILE_URL">Upwork profile</a> -->
+    </p>
+  </section>
+
+  <!-- 2 하는 일 3칸 -->
+  <h2>What I do</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Marketplace listing and order automation</h3>
+      <p>Pull products from a source shop, rewrite listings to match each marketplace's rules, publish, and catch rejections before they happen.</p>
+    </div>
+    <div class="card">
+      <h3>Repetitive work as an AI agent loop</h3>
+      <p>Research, build, review, publish, QA: each step leaves a file, the next step reads it, and nothing that fails review moves on.</p>
+    </div>
+    <div class="card">
+      <h3>Internal tools as phone apps</h3>
+      <p>Installable PWAs with web push, reachable only inside your private network. No app store, no native builds.</p>
+    </div>
+  </div>
+
+  <!-- 3 만든 것 3건 (각 문제·만든 것·결과 3줄. "세윤 확인" 숫자는 비움) -->
+  <h2>Things I built</h2>
+
+  <article class="work">
+    <h3>Drop-shipping automation for Coupang and Naver Smart Store</h3>
+    <dl>
+      <dt>Problem</dt>
+      <dd>Small sellers lose their time after listing, not before: fulfilling orders by hand, and losing seller score when the source shop runs out of stock.</dd>
+      <dt>What I built</dt>
+      <dd>A macOS desktop app that takes products picked on Naver, rewrites listings with AI to fit Coupang's rules, publishes to both marketplaces, and runs a pre-publish check. Electron UI, Node daemon, worker processes, Redis queue, plus a Chrome extension.</dd>
+      <dt>Outcome</dt>
+      <dd>A trial run on the client's own MacBook published 3 real listings to Coupang (Sept 2026). Not yet in paid production. Humans press every button that spends money or publishes.</dd>
+    </dl>
+    <!-- 캡처 1장: 고객 상호·주문 정보가 안 보이는 화면만. 외주 세션이 가린 파일을 주면 넣는다. <img src="work-autoseller.png" alt="Setup screen with a connection test button on each step"> -->
+  </article>
+
+  <article class="work">
+    <h3>Unattended digital-product pipeline</h3>
+    <dl>
+      <dt>Problem</dt>
+      <dd>Selling digital products means repeating research, build, English review, store listing, promo copy, and QA for every item. Solo, that caps out at one or two a day.</dd>
+      <dt>What I built</dt>
+      <dd>An AI agent loop on a home Linux box that wakes up every 2 hours and runs the whole cycle: research, creation, review, Gumroad listing, promo copy, automated QA, and a weekly KPI roll-up.</dd>
+      <dt>Outcome</dt>
+      <dd>15 products publicly listed on Gumroad. The only human touch is reading the weekly KPI.</dd>
+    </dl>
+    <!-- <img src="work-pipeline.png" alt="Weekly KPI file written by the loop"> -->
+  </article>
+
+  <article class="work">
+    <h3>Two-room PWA with web push, private network only</h3>
+    <dl>
+      <dt>Problem</dt>
+      <dd>I wanted a household ledger and my agents' status on my phone without two native apps, app-store review, or a public port.</dd>
+      <dt>What I built</dt>
+      <dd>An installable PWA with a ledger room and an agent room, web push for notifications, reachable only inside a Tailscale private network.</dd>
+      <dt>Outcome</dt>
+      <dd>In daily use. Ships without an app store.</dd>
+    </dl>
+    <!-- <img src="work-pwa.png" alt="Phone home screen with the installed app"> -->
+  </article>
+
+  <!-- 4 파는 것 -->
+  <h2>Things I sell</h2>
+  <p>Digital products made by the pipeline above: Korean travel cards, Hangul practice sheets, seamless Korean pattern tiles, UI sound effects.
+    <a href="https://7744467419998.gumroad.com/">See them on Gumroad</a>.
+    <!-- Etsy 상점이 열리면 여기에 링크 1개 추가. Gumroad 프로필 URL은 운영실 11-16 값(숫자 서브도메인, home-agent가 사용자명으로 바꾸면 갱신). -->
+  </p>
+
+  <!-- 5 일하는 방식 3줄 (세 번째 줄 = docs/AI-표시-문구.md 기본 문구) -->
+  <h2>How I work</h2>
+  <ul class="rules">
+    <li>Humans press every button that spends money or publishes.</li>
+    <li>No tokens or passwords live in code or documents.</li>
+    <li>Designed and built by me with AI agents.</li>
+  </ul>
+
+  <!-- 6 연락 -->
+  <h2 id="contact">Contact</h2>
+  <div class="contact">
+    <p><a href="mailto:seyunjeong2025@gmail.com">seyunjeong2025@gmail.com</a></p>
+    <p>I reply within 24 hours.</p>
+  </div>
+</main>
+
+<!-- 7 발: 전화·주소 없음 -->
+<footer>© 2026 Seyun Jeong</footer>
+<!-- 방문 카운터 GoatCounter: backoffice 가입 뒤 코드명을 받아 아래 한 줄을 주석에서 푼다(영어·한국어 페이지 같은 코드). -->
+<!-- 방문 카운터(GoatCounter): backoffice 가입 뒤 코드명을 받아 count.js 한 줄을 여기에 넣는다. -->
+</body>
+</html>
